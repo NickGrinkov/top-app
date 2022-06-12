@@ -3,11 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
 };
 
-
-
-module.exports = {
-  nextConfig,
-  webpack(config) {
+const webpack = (config) =>  {
   config.module.rules.push({
     test: /\.svg$/,
     issuer: /\.(js|ts)x?$/,
@@ -15,5 +11,11 @@ module.exports = {
   });
 
   return config;
-  }
+};
+
+
+
+module.exports = {
+  nextConfig,
+  webpack,
 };
