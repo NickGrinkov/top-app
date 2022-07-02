@@ -17,7 +17,6 @@ export const Tag = ({ children, size = "s", color, href, className, ...props}: T
       {...props}
     >
       {href ? <a href={href}>{children}</a> : <>{children}</>}
-      {children}
     </div>
   );
 };

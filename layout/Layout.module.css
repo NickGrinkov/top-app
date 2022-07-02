@@ -2,7 +2,7 @@
 	display: grid;
 	grid-template-columns: auto 230px minmax(320px, 1200px) auto;
 	height: 100vh;
-	gap: 0 30px;
+	gap: 40px 30px;
 	grid-template-areas: 
 	". header header ."
 	". sidebar main ."
@@ -42,4 +42,7 @@
 			"main"
 			"footer";
 		}
+	.main {
+		padding: 15px;
+	}
 }
