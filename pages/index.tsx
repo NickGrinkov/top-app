@@ -3,11 +3,8 @@ import { GetStaticProps } from "next";
 import axios from "axios";
 import { MenuItem } from "../interfaces/menu.interface";
 import { withLayout } from "../layout/Layout";
-import { Htag } from "../components";
-import { Button } from "../components";
-import { P } from "../components";
-import { Tag } from "../components";
-import { Rating } from "../components";
+import { Htag, Button, P, Tag, Rating, Input, Textarea } from "../components";
+
 
 
 function Home({ menu }: HomeProps): JSX.Element {
@@ -28,6 +25,8 @@ function Home({ menu }: HomeProps): JSX.Element {
       <Tag size="s" color="green">Green</Tag>
       <Tag size="s" color="primary">Primary</Tag>
       <Rating rating={rating} isEditable setRating={setRating} />
+      <Input placeholder="a"/>
+      <Textarea placeholder="ghbdtn"/>
     </>
   );
 }
