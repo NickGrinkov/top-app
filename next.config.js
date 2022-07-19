@@ -18,5 +18,8 @@ const webpack = (config) =>  {
 
 module.exports = {
   nextConfig,
+  images: {
+    domains: ['courses-top.ru']
+  },
   webpack,
 };
