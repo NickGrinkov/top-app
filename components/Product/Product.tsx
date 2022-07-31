@@ -102,10 +102,10 @@ export const Product = ({ product }: ProductProps): JSX.Element => {
         })}
       >
         {product.reviews.map((review) => (
-          <>
-            <Review key={review._id} review={review} />
-            <Divider/>
-          </>
+          <div key={review._id}>
+            <Review review={review} />
+            <Divider />
+          </div>
         ))}
         <ReviewForm productId={product._id} />
       </Card>
